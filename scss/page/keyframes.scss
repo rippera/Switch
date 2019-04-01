@@ -1,0 +1,16 @@
+@keyframes downAnime{
+    from{
+        top: -12px;
+    }
+    to{
+        top: 30px;
+    }
+}
+@keyframes socAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

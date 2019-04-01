@@ -1,0 +1,87 @@
+.work_two_section{
+    padding: 40px 0;
+    background: $Green;
+}
+.work_two_title{
+    font-family: $MontLight;
+    font-size: 21px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $Green2;
+    &::before{
+        content: '';
+        width: 45px;
+        height: 2px;
+        background: $Green2;
+        display: block;
+        position: absolute;
+        left: 525px;
+        bottom: -13px;
+    }
+}
+.work_two_wrapper >{
+    p{
+        font-family: $MontLight;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $Green2;
+        margin-top: 35px;
+        margin-bottom: 70px;
+    }
+}
+.btns_wrapper{
+    width: 280px;
+    height: 30px;
+    border-radius: 40px;
+    background: $White;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.fillter_btn{
+    font-family: $ProxRegular;
+    font-size: 16px;
+    color: $Green;
+    cursor: pointer;
+}
+.btn_fillter{
+    &::after{
+        content: '';
+        width: 2px;
+        height: 30px;
+        background: $Green2;
+        display: block;
+        position: absolute;
+        left: -20px;
+        bottom: -7px;
+    }
+}
+.fillter_img{
+    margin-top: 50px;
+}
+.img_box{
+    margin-bottom: 30px;
+}
+.more_work{
+    font-family: $ProxRegular;
+    font-size: 18px;
+    color: $White;
+    cursor: pointer;
+    margin: auto;
+    padding: 15px 0;
+    background: $Green2;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    text-transform: capitalize;
+}
+.icon-arrow-right2{
+    position: absolute;
+    bottom: 18px;
+    right: 13px;
+    font-size: 13px;
+}

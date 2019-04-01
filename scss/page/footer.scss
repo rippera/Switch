@@ -1,0 +1,30 @@
+.footer__{
+    padding: 40px 0;
+    background: #222222;
+}
+.footer__title{
+    font-family: $MontLight;
+    font-size: 21px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #101010;
+    margin-bottom: 35px;
+    &::before{
+        content: '';
+        width: 45px;
+        height: 2px;
+        background: #101010;
+        display: block;
+        position: absolute;
+        left: 525px;
+        bottom: -13px;
+    }
+}
+.footer__box__img{
+    img{
+        width: 100%;
+        margin-top: 10px;
+        height: 45px;
+    }
+}

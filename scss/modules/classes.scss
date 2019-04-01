@@ -1,0 +1,65 @@
+.nav-active{
+    font-family: $MontBold !important;
+}
+.relative{
+    position: relative;
+}
+.mt-60{
+  margin-top: 60px;
+}
+.mb-15{
+  margin-bottom: 15px;
+}
+.ml-15{
+  margin-left: 15px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arrow-right:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-camera:before {
+  content: "\e90f";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-meter:before {
+  content: "\e9a6";
+}
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-arrow-down2:before {
+  content: "\ea3e";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-dribbble:before {
+  content: "\eaa7";
+}
+.icon-behance:before {
+  content: "\eaa8";
+}

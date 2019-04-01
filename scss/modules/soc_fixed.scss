@@ -1,0 +1,38 @@
+.social__wrapper{
+    position: fixed;
+    left: -90px;
+    top: 150px;
+    z-index: 200;
+    transition: all .3s linear;
+}
+.social__li{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 2;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.social__li{
+    &:hover{
+        width: 60px;
+    }
+}
+.facebook{
+    background: #3b5999;
+}
+.twitter{
+    background: #55acee;
+}
+.instagram{
+    background: #e4405f;
+}
+.linkedin{
+    background: #0077B5;
+}
+.socAnimation{
+    animation: socAnimation .7s linear;
+}

@@ -1,0 +1,121 @@
+.header-section{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(../img/bg-img/bg1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+    background-attachment: fixed;
+}
+.header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+}
+.nav-li{
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: $White;
+    font-family: $MontLight;
+    font-size: 16px;
+    position: relative;
+    transition: all .3s linear;
+    &::before{
+        content: '';
+        width: 0px;
+        height: 5px;
+        background: $Green;
+        position: absolute;
+        top: -10px;
+        left: 15px;
+        display: block;
+        transition: all .5s linear;
+    }
+    &:hover::before{
+        width: 47px;
+        
+    }
+}
+.logo{
+    font-family: $Nautilus;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: $White;
+    text-transform: capitalize;
+}
+.search{
+    font-size: 18px;
+    color: $White;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+.search_input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 25px;
+    height: 25px;
+    width: 170px;
+    transition: all .4s linear;
+    opacity: 0;
+    &::placeholder{
+        color: $White;
+    }
+    &:focus,
+    &:hover{
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 1;
+    }
+    &:focus~ .search,
+    &:hover ~ .search{
+        color: $Black !important;
+    }
+}
+
+.main_title{
+    font-family: $MontBold;
+    font-size: 55px;
+    text-align: center;
+    color: $White;
+    margin-top: 200px;
+}
+.main_btn{
+    font-family: $ProxRegular;
+    font-size: 21px;
+    color: $White;
+    text-align: center;
+    margin: 45px auto 0 auto;
+    padding: 10px 0;
+    border-radius: 25px;
+    background-color: $Green;
+    width: 200px;
+    height: 50px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+.scroll_btn{
+    font-family: $ProxLight;
+    line-height: 1.5;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    height: 25px;
+    width: 130px;
+    font-size: 18px;
+    color: $Black;
+    text-align: center;
+    margin: 170px auto 0 auto;
+    cursor: pointer;
+    padding-right: 15px;
+    overflow: hidden;
+}
+.icon-arrow-down2{
+    font-size: 12px;
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    animation: downAnime 2.2s infinite;
+}
