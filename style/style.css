@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 .nav-active {
   font-family: "FontsFreeNetMontserratBold" !important; }
 
@@ -15,6 +18,25 @@
 
 .mt-30 {
   margin-top: 30px; }
+
+.go__top {
+  opacity: 0;
+  height: 40px;
+  width: 40px;
+  background: green;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  border-radius: 50px;
+  z-index: 25;
+  line-height: 1.7;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  color: #ffffff;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear; }
 
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon' !important;
@@ -201,14 +223,25 @@ a {
   height: 660px;
   background-attachment: fixed; }
 
-.header {
+.header__fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: transparent;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  padding: 30px 0; }
+
+.header__container {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  padding: 35px 0; }
+  align-items: center; }
 
 .nav-li {
   padding: 0 15px;
@@ -285,7 +318,7 @@ a {
   font-size: 55px;
   text-align: center;
   color: #ffffff;
-  margin-top: 200px; }
+  padding-top: 200px; }
 
 .main_btn {
   font-family: "FontsFreeNetProximaNovaRegular";
