@@ -53,7 +53,7 @@ function loadImgs(url) {
        const dataBase = JSON.parse(this.responseText);
       //  let num = Math.floor(Math.random() * 10 +1);
       allimgs.forEach(function(img){
-        img.setAttribute('src',dataBase.imgUrls[0].img__url2);
+        img.setAttribute('src',dataBase.imgUrls[0].img__url0);
         img.setAttribute('class','img__fluid fadeD');
       });
       }else{
