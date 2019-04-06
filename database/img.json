@@ -1,20 +1,20 @@
 {
     "imgUrls":[
         {
-            "img__url0": "../img/fillterImgs/audi.jpg",
-            "img__url1": "../img/fillterImgs/1.jpg",
-            "img__url2": "../img/fillterImgs/2.jpg",
-            "img__url3": "../img/fillterImgs/3.jpg",
-            "img__url4": "../img/fillterImgs/4.jpg",
-            "img__url5": "../img/fillterImgs/5.jpg",
-            "img__url6": "../img/fillterImgs/6.jpg",
-            "img__url7": "../img/fillterImgs/7.jpg",
-            "img__url8": "../img/fillterImgs/8.jpg",
-            "img__url9": "../img/fillterImgs/9.jpg",
-            "img__url10": "../img/fillterImgs/10.jpg",
-            "img__url11": "../img/fillterImgs/11.jpg",
-            "img__url12": "../img/fillterImgs/12.jpg",
-            "img__url13": "../img/fillterImgs/13.jpg"
+            "img__url0": "img/fillterImgs/audi.jpg",
+            "img__url1": "img/fillterImgs/1.jpg",
+            "img__url2": "img/fillterImgs/2.jpg",
+            "img__url3": "img/fillterImgs/3.jpg",
+            "img__url4": "img/fillterImgs/4.jpg",
+            "img__url5": "img/fillterImgs/5.jpg",
+            "img__url6": "img/fillterImgs/6.jpg",
+            "img__url7": "img/fillterImgs/7.jpg",
+            "img__url8": "img/fillterImgs/8.jpg",
+            "img__url9": "img/fillterImgs/9.jpg",
+            "img__url10": "img/fillterImgs/10.jpg",
+            "img__url11": "img/fillterImgs/11.jpg",
+            "img__url12": "img/fillterImgs/12.jpg",
+            "img__url13": "img/fillterImgs/13.jpg"
         }
     ]
 }
