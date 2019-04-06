@@ -19,6 +19,13 @@ html{
 .mt-30{
   margin-top: 30px;
 }
+.img__fluid{
+  max-width: 100%;
+  height: 100%
+}
+.fadeD{
+  animation: fadeD 1s linear;
+}
 
 .go__top{
   // display: none;

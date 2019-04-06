@@ -19,6 +19,14 @@ html {
 .mt-30 {
   margin-top: 30px; }
 
+.img__fluid {
+  max-width: 100%;
+  height: 100%; }
+
+.fadeD {
+  -webkit-animation: fadeD 1s linear;
+  animation: fadeD 1s linear; }
+
 .go__top {
   opacity: 0;
   height: 40px;
@@ -481,7 +489,9 @@ a {
   margin-top: 50px; }
 
 .img_box {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 250px;
+  height: 170px; }
 
 .more_work {
   font-family: "FontsFreeNetProximaNovaRegular";
@@ -860,6 +870,18 @@ textarea.input__1 {
     opacity: 1; } }
 
 @keyframes socAnimation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeD {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeD {
   from {
     opacity: 0; }
   to {

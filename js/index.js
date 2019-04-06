@@ -14,7 +14,7 @@ function socIconAnimation() {
     socialWrapper.style.left = '-5px';
     socialWrapper.classList.add('socAnimation');
 };
-
+// animations
 function headerAnimations() {
   let header = document.querySelector('.header__fixed');
   let topPos = window.pageYOffset;
@@ -36,8 +36,35 @@ function goTop() {
     goTop.style.opacity = '0';
   }
 }
+// window scrool eventlistener
 window.addEventListener('scroll',function(){
   headerAnimations();
   goTop();
 });
 
+// ajax req
+const photoBtn = document.getElementById('photoBtn');
+const allimgs = document.querySelectorAll('.img_box img');
+function loadImgs(url) {
+    const xhrReq = new XMLHttpRequest();
+    xhrReq.open('GET',url);
+    xhrReq.onload = (function () {
+      if (this.status == 200) {
+       const dataBase = JSON.parse(this.responseText);
+      //  let num = Math.floor(Math.random() * 10 +1);
+      allimgs.forEach(function(img){
+        img.setAttribute('src',dataBase.imgUrls[0].img__url2);
+        img.setAttribute('class','img__fluid fadeD');
+      });
+      }else{
+        this.onerror();
+      }
+    });
+    xhrReq.onerror = (function(){
+      console.log('error 404');
+    });
+    xhrReq.send();
+}
+photoBtn.addEventListener('click',function () {
+  loadImgs('./database/img.json');
+})
