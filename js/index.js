@@ -3,6 +3,8 @@ const allImgBtn = document.getElementById('allBtn');
 const photograpyBtn = document.getElementById('photograpybtn');
 const designBtn = document.getElementById('designBtn');
 const artBtn = document.getElementById('artBtn');
+//
+const allimgs = document.querySelectorAll('.img_box img');
 
 $(document).ready(function(){
     $('.slider').slick({
@@ -14,7 +16,7 @@ $(document).ready(function(){
 });
 
 
-setTimeout(socIconAnimation,2000);
+// setTimeout(socIconAnimation,2000);
 function socIconAnimation() {
     let socialWrapper = document.getElementById('social__wrapper');
     socialWrapper.style.left = '-5px';
@@ -45,7 +47,7 @@ function goTop() {
 // ajax req
 
 function loadImgFromJsons(url) {
-    const allimgs = document.querySelectorAll('.img_box img');
+    
     const xhrReq = new XMLHttpRequest();
     xhrReq.open('GET',url);
     xhrReq.onload = (function () {
