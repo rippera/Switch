@@ -81,7 +81,7 @@ allImgBtn.addEventListener('click',function () {
 });
 // window load
 window.addEventListener('load',function(){
-  socIconAnimation();
+  setTimeout(socIconAnimation,2000);
   loadImgFromJsons('./database/all.json');
 });
 // window scrool eventlistener
