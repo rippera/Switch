@@ -1,3 +1,9 @@
+// btns
+const allImgBtn = document.getElementById('allBtn');
+const photograpyBtn = document.getElementById('photograpybtn');
+const designBtn = document.getElementById('designBtn');
+const artBtn = document.getElementById('artBtn');
+
 $(document).ready(function(){
     $('.slider').slick({
       // fade: true,
@@ -7,7 +13,7 @@ $(document).ready(function(){
     });
 });
 
-document.addEventListener('load',setTimeout);
+
 setTimeout(socIconAnimation,2000);
 function socIconAnimation() {
     let socialWrapper = document.getElementById('social__wrapper');
@@ -36,26 +42,19 @@ function goTop() {
     goTop.style.opacity = '0';
   }
 }
-// window scrool eventlistener
-window.addEventListener('scroll',function(){
-  headerAnimations();
-  goTop();
-});
-
 // ajax req
-const photoBtn = document.getElementById('photoBtn');
-const allimgs = document.querySelectorAll('.img_box img');
-function loadImgs(url) {
+
+function loadImgFromJsons(url) {
+    const allimgs = document.querySelectorAll('.img_box img');
     const xhrReq = new XMLHttpRequest();
     xhrReq.open('GET',url);
     xhrReq.onload = (function () {
       if (this.status == 200) {
-       const dataBase = JSON.parse(this.responseText);
-      //  let num = Math.floor(Math.random() * 10 +1);
-      allimgs.forEach(function(img){
-        img.setAttribute('src',dataBase.imgUrls[0].img__url0);
-        img.setAttribute('class','img__fluid fadeD');
-      });
+        const dataBase = JSON.parse(this.responseText);
+        allimgs.forEach(img =>{
+          img.setAttribute('src',dataBase.imgUrls[Math.floor(Math.random()*dataBase.imgUrls.length)]);
+          img.setAttribute('class','img__fluid');
+        });
       }else{
         this.onerror();
       }
@@ -65,6 +64,28 @@ function loadImgs(url) {
     });
     xhrReq.send();
 }
-photoBtn.addEventListener('click',function () {
-  loadImgs('./database/img.json');
-})
+
+// event listeners //
+// btn clicks
+photograpyBtn.addEventListener('click',function () {
+  loadImgFromJsons('./database/photograpy.json');
+});
+designBtn.addEventListener('click',function () {
+  loadImgFromJsons('./database/design.json');
+});
+artBtn.addEventListener('click',function () {
+  loadImgFromJsons('./database/art.json');
+});
+allImgBtn.addEventListener('click',function () {
+  loadImgFromJsons('./database/all.json');
+});
+// window load
+window.addEventListener('load',function(){
+  socIconAnimation();
+  loadImgFromJsons('./database/all.json');
+});
+// window scrool eventlistener
+window.addEventListener('scroll',function(){
+  headerAnimations();
+  goTop();
+});

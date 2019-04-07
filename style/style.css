@@ -21,7 +21,8 @@ html {
 
 .img__fluid {
   max-width: 100%;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 .fadeD {
   -webkit-animation: fadeD 1s linear;
