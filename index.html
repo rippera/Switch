@@ -15,34 +15,65 @@
     <title>switch</title>
 </head>
 
+
 <body>
 <div class="go__top" id="gotop"><a href="#top"><i class="fas fa-arrow-up"></i></a></div>  
-<section class="header-section">
-    <header id="header__" class="  header__fixed">
+<section class="">
+     <div class="container relative">
+        <div class="arrow arrow__left"></div>
+        <div class="arrow arrow__right"></div>
+     </div>
+    <header id="header__" class="header__fixed">
         <div class="container ">
             <div class="header__container d-flex ">
                 <div class="navigation">
-                    <nav class="navv">
-                        <ul class="nav-ul d-flex">
-                            <li class="nav-li nav-active"><a href="#">home</a></li>
-                            <li class="nav-li"><a href="#">what we do</a></li>
-                            <li class="nav-li"><a href="#">testimonial</a></li>
-                            <li class="nav-li"><a href="#">contact us</a></li>
+                    <nav id="nav-menu" class="navv">
+                        <ul class="nav__ul d-flex">
+                            <li class="nav__li  nav__li__active"><a href="#">home</a></li>
+                            <li class="nav__li"><a href="#workOne">what we do</a></li>
+                            <li class="nav__li"><a href="#testimonials">testimonial</a></li>
+                            <li class="nav__li"><a href="#contact">contact us</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="logo"><a href="index.html">switch</a></div>
                 <div class="relative">
-                    <input type="text" class="search_input" placeholder="Search...">
                     <div class="icon-search search"></div>
+                    <input type="text" class="search_input" placeholder="Search...">
                 </div>
             </div>
         </div>
     </header>
-    <div class="container">
-        <div class="main_title">Art is Eternal Happiness</div>
-        <div class="main_btn">WORK WITH US</div>
-        <div class="scroll_btn relative">scroll down<p class="icon-arrow-down2"></p>
+    <div class="slider__section">
+        <div class="slider__options slider1 slider__active">
+            <div class="container">
+                <div class="main_title">Art is Eternal Happiness</div>
+                <div class="main_btn">WORK WITH US</div>
+                <a href="#workOne">
+                    <div class="scroll_btn relative">scroll down<p class="icon-arrow-down2"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="slider__options slider2">
+            <div class="container">
+                <div class="main_title">Art is Eternal Happiness</div>
+                <div class="main_btn">WORK WITH US</div>
+                <a href="#workOne">
+                    <div class="scroll_btn relative">scroll down<p class="icon-arrow-down2"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="slider__options slider3">
+            <div class="container">
+                <div class="main_title">Art is Eternal Happiness</div>
+                <div class="main_btn">WORK WITH US</div>
+                <a href="#workOne">
+                    <div class="scroll_btn relative">scroll down<p class="icon-arrow-down2"></p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -75,7 +106,7 @@
 </div>
 <!--end social fixed -->
 
-<section class="work_one">
+<section id="workOne" class="work_one">
     <div class="container">
         <div class="work_one_wrapper">
             <div class="work_one_title relative">what we do</div>
@@ -185,7 +216,7 @@
     </div>
 </section>
 
-<section class="testimonials_sec">
+<section id="testimonials" class="testimonials_sec">
     <div class="container">
         <div class="testimonials_wrapper">
             <div class="work_one_title relative">TESTIMONIALS</div>
@@ -359,7 +390,7 @@
     </div>
 </section>
 
-<section class="contact__section">
+<section id="contact" class="contact__section">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">

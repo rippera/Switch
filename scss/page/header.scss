@@ -1,13 +1,65 @@
-.header-section{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url(../img/bg-img/bg1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.slider__section{
+    position: relative;
+    overflow: hidden;
     height: 660px;
     background-attachment: fixed;
 }
 
+.slider1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(../img/bg-img/bg1.jpg);
+}
+.slider2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(../img/fillterImgs/design/design_2.jpg);
+}
+.slider3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(../img/fillterImgs/art/art_1.jpg);
+}
+.slider__options{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .7s linear;
+    &.slider__active{
+        opacity: 1 ;
+    }
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    // margin-top: -45px;
+    margin-top: 290px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    opacity: 0.1;
+    transition: all .5s linear;
+    z-index: 12;
+    &:hover{
+        opacity: 1;
+    }
+}
+.arrow__left{
+    border-width: 30px 40px 30px 0;
+    left: 0;
+    margin-left: 30px;
+    border-color: transparent $Green transparent transparent;
+}
+.arrow__right{
+    border-width: 30px 0 30px 40px;
+    right: 0;
+    margin-right: 30px;
+    border-color: transparent  transparent transparent $Green;
+}
 .header__fixed{
     position: fixed;
     top: 0;
@@ -22,7 +74,25 @@
     justify-content: space-between;
     align-items: center;
 }
-.nav-li{
+.nav__li__active{
+    transition: all .3s linear;
+    font-family: $MontBold !important;
+    &::after{
+        content: '';
+        width: 40px;
+        height: 2px;
+        background: $Green;
+        position: absolute;
+        top: -10px;
+        left: 15px;
+        display: block;
+        transition: all .5s linear;
+    }
+    &:hover::after{
+        width: 0px;
+    }
+}
+.nav__li{
     padding: 0 15px;
     text-transform: capitalize;
     color: $White;
@@ -43,7 +113,6 @@
     }
     &:hover::before{
         width: 47px;
-        
     }
 }
 .logo{
@@ -61,6 +130,14 @@
     right: 5px;
     cursor: pointer;
     transition: all .4s linear;
+    z-index: 12;
+    &:hover{
+        color: $Black !important;
+    }
+    &:hover ~ .search_input {
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 1;
+    }
 }
 .search_input{
     border: none;
@@ -75,17 +152,16 @@
     &::placeholder{
         color: $White;
     }
-    &:focus,
-    &:hover{
-        background: rgba(255, 255, 255, 0.5);
-        opacity: 1;
-    }
-    &:focus~ .search,
-    &:hover ~ .search{
-        color: $Black !important;
-    }
+     &:focus,
+     &:hover{
+         background: rgba(255, 255, 255, 0.5);
+         opacity: 1;
+     }
+     &:focus ~ .search,
+     &:hover ~ .search{
+         color: $Black !important;
+     }
 }
-
 .main_title{
     font-family: $MontBold;
     font-size: 55px;
