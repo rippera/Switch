@@ -400,6 +400,10 @@ a {
   .search_input:hover ~ .search {
     color: #000000 !important; }
 
+.sliderTitleAnimation {
+  -webkit-animation: sliderTitleAnime .5s linear;
+  animation: sliderTitleAnime .5s linear; }
+
 .main_title {
   font-family: "FontsFreeNetMontserratBold";
   font-size: 55px;
@@ -443,6 +447,50 @@ a {
   right: 10px;
   -webkit-animation: downAnime 2.2s infinite;
   animation: downAnime 2.2s infinite; }
+
+.burger {
+  display: none !important;
+  z-index: 35; }
+  .burger span {
+    background: #54d154;
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+
+.line1 {
+  top: -10px !important;
+  position: absolute; }
+
+.line2 {
+  top: -3px !important;
+  position: absolute; }
+
+.line3 {
+  top: 4px !important;
+  position: absolute; }
+
+.burger.open .line1 {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -1px !important; }
+
+.burger.open .line2 {
+  left: -45px;
+  opacity: 0; }
+
+.burger.open .line3 {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 0 !important; }
 
 .work_one {
   padding: 40px 0; }
@@ -537,7 +585,7 @@ a {
   margin-bottom: 70px; }
 
 .btns_wrapper {
-  width: 280px;
+  width: 300px;
   height: 30px;
   border-radius: 40px;
   background: #ffffff;
@@ -546,7 +594,8 @@ a {
   justify-content: space-around;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding: 0 10px; }
 
 .fillter_btn {
   font-family: "FontsFreeNetProximaNovaRegular";
@@ -965,3 +1014,100 @@ textarea.input__1 {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+@media screen and (max-width: 1024px) {
+  .btn_fillter::after {
+    left: -13px; }
+  .img_box {
+    width: 225px; }
+  .work_one_title::before {
+    left: 435px; }
+  .work_two_title::before {
+    left: 435px; }
+  .team_box::after {
+    left: 100px; }
+  .contact__title::after,
+  .recent__posts__title::after, .about__us__title::after {
+    left: 135px; }
+  .footer__title::before {
+    left: 435px; } }
+
+@media screen and (max-width: 768px) {
+  .nav__li {
+    font-size: 14px; }
+  .work_one_title::before {
+    display: none; }
+  .work_two_title::before {
+    display: none; }
+  .team_box::after {
+    display: none; }
+  .img_box {
+    width: 100%;
+    height: 185px; }
+  .team {
+    margin-top: 30px; }
+  .footer__title::before,
+  .recent__posts,
+  .contact__title::after, .recent__posts__title::after, .about__us__title::after {
+    display: none; }
+  .contact__intro {
+    margin-top: 20px; } }
+
+@media screen and (max-width: 760px) {
+  .navv {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 0;
+    right: -600px;
+    background: #000000;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear; }
+    .navv.nav__active {
+      right: -355px; }
+  .nav__ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 20px; }
+  .nav__li {
+    margin-bottom: 10px; }
+  .burger {
+    display: block !important; }
+  .main_title {
+    font-size: 25px;
+    padding-top: 130px; }
+  .slider__section {
+    height: 460px; }
+  .main_btn {
+    font-size: 18px;
+    width: 175px;
+    height: 40px;
+    line-height: 1.2; }
+  .arrow {
+    margin-top: 200px;
+    opacity: 0.5; }
+  .work_one_box {
+    margin-bottom: 50px; }
+  .img_box {
+    height: 115px;
+    width: 90px; }
+  .team_soc {
+    display: none !important; }
+  .arrow__right {
+    border-width: 20px 0 20px 25px; }
+  .arrow__left {
+    border-width: 20px 25px 20px 0; }
+  .social__wrapper {
+    top: 250px; } }
+
+@media screen and (max-width: 390px) {
+  .img_box {
+    height: 95px;
+    width: 75px; }
+  .slider_intro {
+    font-size: 14px; } }

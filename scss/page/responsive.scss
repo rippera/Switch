@@ -1,0 +1,140 @@
+@media screen and (max-width:1024px){
+    .btn_fillter{
+        &::after{
+            left: -13px;
+        }
+    }
+    .img_box{
+        width: 225px;
+    }
+    .work_one_title{
+        &::before{
+            left: 435px;
+        }
+    }
+    .work_two_title{
+        &::before{
+            left: 435px;
+        }
+    }
+    .team_box{
+        &::after{
+            left: 100px;
+        }
+    }
+    .contact__title::after,
+    .recent__posts__title::after, .about__us__title::after{
+        left: 135px;
+    }
+    .footer__title{
+        &::before{
+            left: 435px;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .nav__li{
+        font-size: 14px;
+    }
+    .work_one_title{
+        &::before{
+            display: none;
+        }
+    }
+    .work_two_title{
+        &::before{
+            display: none;
+        }
+    }
+    .team_box{
+        &::after{
+            display: none;
+        }
+    }
+    .img_box{
+        width: 100%;
+        height: 185px;
+    }
+    .team{
+        margin-top: 30px;
+    }
+    .footer__title::before,
+    .recent__posts,
+    .contact__title::after, .recent__posts__title::after, .about__us__title::after{
+        display: none;
+    }
+    .contact__intro{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 760px){
+    .navv{
+        // display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: -600px;
+        background: $Black;
+        // width: 100%;
+        // height: 100vh;
+        transition: all 1s linear;
+        &.nav__active{
+            right: -355px;
+        }
+    }
+    .nav__ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .nav__li{
+        margin-bottom: 10px;
+    }
+    .burger{
+        display: block !important;
+    }
+    .main_title{
+        font-size: 25px;
+        padding-top: 130px;
+    }
+    .slider__section{
+        height: 460px;
+    }
+    .main_btn{
+        font-size: 18px;
+        width: 175px;
+        height: 40px;
+        line-height: 1.2;
+    }
+    .arrow{
+        margin-top: 200px;
+        opacity: 0.5;
+    }
+    .work_one_box{
+        margin-bottom: 50px;
+    }
+    .img_box{
+        height: 115px;
+        width: 90px;
+    }
+    .team_soc{
+        display: none !important;
+    }
+    .arrow__right{
+        border-width: 20px 0 20px 25px;
+    }
+    .arrow__left{
+        border-width: 20px 25px 20px 0;
+    }
+    .social__wrapper{
+        top: 250px;
+    }
+}
+@media screen and (max-width: 390px){
+    .img_box{
+        height: 95px;
+        width: 75px;
+    }
+    .slider_intro{
+        font-size: 14px;
+    }
+}

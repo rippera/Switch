@@ -162,6 +162,9 @@
          color: $Black !important;
      }
 }
+.sliderTitleAnimation{
+    animation: sliderTitleAnime .5s linear;
+}
 .main_title{
     font-family: $MontBold;
     font-size: 55px;
@@ -204,4 +207,47 @@
     top: -12px;
     right: 10px;
     animation: downAnime 2.2s infinite;
+}
+.burger{
+    display: none !important;
+    z-index: 35;
+    span{
+        background: $Green;
+        width: 25px;
+        height: 3px;
+        display: block;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all .3s linear;
+    }
+}
+.line1{
+    top: -10px !important;
+    position: absolute;
+}
+.line2{
+    top: -3px !important;
+    position: absolute;
+}
+.line3{
+    top: 4px !important;
+    position: absolute;
+}
+.burger{
+    &.open{
+        .line1{
+            transform: rotate(45deg);
+            top: -1px !important;
+        }
+        .line2{
+            left: -45px;
+            opacity: 0;
+        }
+        .line3{
+            transform: rotate(-45deg);
+            top: 0 !important;
+        }
+    }
 }
