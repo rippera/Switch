@@ -12,7 +12,7 @@ const navBurger = document.querySelector('.burger');
 const navigation = document.getElementById('nav__');
 const allimgs = document.querySelectorAll('.img_box img');
 const headerSectionSlider = document.querySelectorAll('.slider__options ');
-const auto = false;
+const auto = true;
 const intervalTime = 5000;
 let sliderInterval;
 
@@ -133,6 +133,8 @@ nav.addEventListener('click', function (e) {
       let toBeActive = e.target;
       let parent = toBeActive.parentElement
       parent.classList.add('nav__li__active');
+      navBurger.classList.remove('open');
+      navigation.classList.remove('nav__active');
     }
   });
 });

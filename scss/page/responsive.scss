@@ -73,21 +73,28 @@
         position: absolute;
         flex-direction: column;
         top: 0;
-        right: -600px;
-        background: $Black;
-        // width: 100%;
-        // height: 100vh;
-        transition: all 1s linear;
+        left: -100%;
+        background: rgba(0,0,0,0.8);
+        width: 100%;
+        height: 100vh;
+        transition: all .7s linear;
         &.nav__active{
-            right: -355px;
+            left: 0%;
         }
     }
     .nav__ul{
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 150px;
     }
     .nav__li{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        &::before{
+            left: 183px;
+        }
+        &::after{
+            display: none;
+        }
     }
     .burger{
         display: block !important;
@@ -136,5 +143,19 @@
     }
     .slider_intro{
         font-size: 14px;
+    }
+    .main_btn{
+        font-size: 16px;
+        width: 150px;
+    }
+    .main_title{
+        font-size: 18px;
+    }
+    .arrow{
+        margin-top: 190px;
+    }
+    .img_box{
+        height: 79px;
+        width: 60px;
     }
 }

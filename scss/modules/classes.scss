@@ -45,7 +45,15 @@ html{
   transition: all .3s linear;
 }
 
-
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: $Green;
+}
+::-webkit-scrollbar-thumb{
+  background: $Black;
+}
 
 
 
