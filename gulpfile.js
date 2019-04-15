@@ -8,7 +8,7 @@ sass.compiler = require('node-sass');
  
 gulp.task('sass', function () {
   return gulp.src('scss/style.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 3 versions'],
       cascade: false

@@ -160,7 +160,7 @@ window.addEventListener('load', function () {
   loadImgFromJsons('./database/all.json');
 });
 // window scrool eventlistener
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', function (e) {
   headerAnimations();
   goTop();
 });
